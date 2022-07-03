@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 public class Halil extends BaseClass {
 
 
-    @Test(priority=2)
+    @Test(priority=1)
     public void getDestination(){
 
         //driver.get("https://www.delta.com/");
@@ -18,7 +18,7 @@ public class Halil extends BaseClass {
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();",driver.findElement(By.xpath("//input[@name='arrivalCity']")));
         driver.findElement(By.xpath("//input[@aria-invalid='false']")).sendKeys("BUR", Keys.ENTER);
     }
-    @Test(priority=3)
+    @Test(priority=2)
     public void oneWayAndRoundTrip(){
 
         //driver.get("https://www.delta.com/");
@@ -29,7 +29,7 @@ public class Halil extends BaseClass {
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();",driver.findElement(By.xpath("//button[.='done']")));
     }
 
-    @Test(priority=4)
+    @Test(priority=3)
     public void passengers(){
         //driver.get("https://www.delta.com/");
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();",driver.findElement(By.id("passengers-val")));
@@ -38,7 +38,7 @@ public class Halil extends BaseClass {
 
 
     }
-    @Test(priority=5)
+    @Test(priority=4)
     public void submit(){
        // driver.get("https://www.delta.com/");
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();",driver.findElement(By.id("btn-book-submit")));
