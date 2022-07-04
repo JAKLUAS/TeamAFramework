@@ -11,7 +11,7 @@ public class Halil extends BaseClass {
     @Test(priority=1)
     public void getDestination(){
 
-        //driver.get("https://www.delta.com/");
+
         driver.findElement(By.id("headPrimary1")).click();
         driver.findElement(By.xpath("//span[.='From']")) .click();
         driver.findElement(By.id("search_input")).sendKeys("LGA", Keys.ENTER);
@@ -21,7 +21,7 @@ public class Halil extends BaseClass {
     @Test(priority=2)
     public void oneWayAndRoundTrip(){
 
-        //driver.get("https://www.delta.com/");
+
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();",driver.findElement(By.id("selectTripType-val")));
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();",driver.findElement(By.id("ui-list-selectTripType1")));
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();",driver.findElement(By.id("input_departureDate_1")));
@@ -31,7 +31,7 @@ public class Halil extends BaseClass {
 
     @Test(priority=3)
     public void passengers(){
-        //driver.get("https://www.delta.com/");
+
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();",driver.findElement(By.id("passengers-val")));
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();",driver.findElement(By.id("ui-list-passengers0")));
 
@@ -40,7 +40,7 @@ public class Halil extends BaseClass {
     }
     @Test(priority=4)
     public void submit(){
-       // driver.get("https://www.delta.com/");
+
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();",driver.findElement(By.id("btn-book-submit")));
 
     }
