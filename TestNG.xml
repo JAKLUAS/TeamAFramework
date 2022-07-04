@@ -1,0 +1,13 @@
+<suite name="UI Test">
+
+    <test name="Products">
+
+        <classes>
+
+            <class name="TeamFramework.AH_testcases"/>
+
+        </classes>
+
+    </test>
+
+</suite>
