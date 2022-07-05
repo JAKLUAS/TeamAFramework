@@ -29,12 +29,12 @@ public class BaseClass {
         driver.manage().window().maximize();
     }
 
-    @AfterMethod()
-
-
-    public void afterMessage() {
-        driver.quit();
-    }
+//    @AfterMethod()
+//
+//
+//    public void afterMessage() {
+//        driver.quit();
+//    }
 }
 
 
