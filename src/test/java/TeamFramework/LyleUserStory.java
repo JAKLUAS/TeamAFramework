@@ -2,13 +2,12 @@ package TeamFramework;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class LyleUserStory extends BaseClass{
 
-    @Test
+    @Test (groups= "smoke")
     public void getDestinations(){
 
 
@@ -22,7 +21,7 @@ public class LyleUserStory extends BaseClass{
         driver.findElement(By.xpath("//li[@class='airport-list ng-star-inserted'][1]")).click();
 
     }
-    @Test
+    @Test (groups= "smoke")
     public void RoundTripandFlightDates(){
 
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();",driver.findElement(By.xpath("//input[@name='fromAirportCode']")));
@@ -41,7 +40,7 @@ public class LyleUserStory extends BaseClass{
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();",driver.findElement(By.xpath("//a[@aria-label='22 August 2022, Monday']")));
 
     }
-    @Test
+    @Test (groups= "smoke")
     public void onePassenger() {
 
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();",driver.findElement(By.xpath("//input[@name='fromAirportCode']")));
@@ -63,7 +62,7 @@ public class LyleUserStory extends BaseClass{
 
 
     }
-    @Test
+    @Test (groups= "smoke")
     public void submitButton() {
 
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();",driver.findElement(By.xpath("//input[@name='fromAirportCode']")));
@@ -87,7 +86,7 @@ public class LyleUserStory extends BaseClass{
 
 
     }
-    @Test
+    @Test (groups= "smoke")
     public void verifyCurrentPage() {
 
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();",driver.findElement(By.xpath("//input[@name='fromAirportCode']")));
