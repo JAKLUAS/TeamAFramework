@@ -17,7 +17,6 @@ import java.time.Duration;
 public class BaseClass {
 
 
-
     public WebDriver driver;
     @BeforeClass(alwaysRun = true)
     public void methodSetUp() {
@@ -39,8 +38,6 @@ public class BaseClass {
 
 
     @AfterMethod(alwaysRun = true)
-
-
 
 
     public void afterMessage() {
