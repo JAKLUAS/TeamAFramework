@@ -20,7 +20,7 @@ public class BaseClass {
         WebDriverManager.chromedriver().setup();
     }
 
-    @BeforeMethod
+    @BeforeMethod (alwaysRun = true)
 
     public void setUpMethod() {
         driver = new ChromeDriver();
@@ -29,7 +29,7 @@ public class BaseClass {
         driver.manage().window().maximize();
     }
 
-    @AfterMethod()
+    @AfterMethod(alwaysRun = true)
 
 
     public void afterMessage() {
