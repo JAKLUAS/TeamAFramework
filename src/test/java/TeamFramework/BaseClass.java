@@ -19,12 +19,12 @@ public class BaseClass {
 
 
     public WebDriver driver;
-    @BeforeClass
+    @BeforeClass(alwaysRun = true)
     public void methodSetUp() {
         WebDriverManager.chromedriver().setup();
     }
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
 
     public void setUpMethod() {
         driver = new ChromeDriver();
@@ -34,7 +34,8 @@ public class BaseClass {
     }
 
 
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
+
 
 
     public void afterMessage() {
