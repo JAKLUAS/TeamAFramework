@@ -26,7 +26,7 @@ public class AfasUserStory extends BaseClass {
         driver.findElement(By.xpath("//div[@class='dl-datepicker-group dl-datepicker-group-0']//tr[5]//td[4]")).click();
         driver.findElement(By.xpath("//button[@type='button'][2]")).click();
         driver.findElement(By.xpath("//span[@id='passengers-val']")).click();
-        Thread.sleep(20);
+        Thread.sleep(2000);
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();",driver.findElement(By.xpath("//li[@id='ui-list-passengers1']")));
         driver.findElement(By.xpath("//button[@id='btn-book-submit']")).click();
     }
@@ -49,7 +49,7 @@ public class AfasUserStory extends BaseClass {
         driver.findElement(By.xpath("//div[@class='dl-datepicker-group dl-datepicker-group-0']//tr[5]//td[4]")).click();
         driver.findElement(By.xpath("//button[@type='button'][2]")).click();
         driver.findElement(By.xpath("//span[@id='passengers-val']")).click();
-        Thread.sleep(20);
+        Thread.sleep(2000);
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();",driver.findElement(By.xpath("//li[@id='ui-list-passengers1']")));
         driver.findElement(By.xpath("//label[@class='content icon-Checked booking-widget_checkbox-mobile searchOptionFilter']")).click();
         driver.findElement(By.xpath("//button[@id='btn-book-submit']")).click();
@@ -72,7 +72,7 @@ public class AfasUserStory extends BaseClass {
         driver.findElement(By.xpath("//div[@class='dl-datepicker-group dl-datepicker-group-0']//tr[5]//td[4]")).click();
         driver.findElement(By.xpath("//button[@type='button'][2]")).click();
         driver.findElement(By.xpath("//span[@id='passengers-val']")).click();
-        Thread.sleep(20);
+        Thread.sleep(2000);
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();",driver.findElement(By.xpath("//li[@id='ui-list-passengers1']")));
         driver.findElement(By.xpath("//label[@for='chkFlexDate']")).click();
         driver.findElement(By.xpath("//button[@id='btn-book-submit']")).click();
@@ -99,11 +99,11 @@ public class AfasUserStory extends BaseClass {
         driver.findElement(By.xpath("//div[@class='dl-datepicker-group dl-datepicker-group-0']//tr[5]//td[4]")).click();
         driver.findElement(By.xpath("//button[@type='button'][2]")).click();
         driver.findElement(By.xpath("//span[@id='passengers-val']")).click();
-        Thread.sleep(20);
+        Thread.sleep(2000);
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();",driver.findElement(By.xpath("//li[@id='ui-list-passengers1']")));
 
         driver.findElement(By.xpath("//a[@class='arrow-wht-expander icon-advsearchtriangle']")).click();
-        Thread.sleep(20);
+        Thread.sleep(2000);
         driver.findElement(By.xpath("//label[@class='nearbyAirports booking-widget_checkbox-mobile icon-Checked advSearchoptionLabel']")).click();
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();",driver.findElement(By.xpath("//button[@class='btn btn-danger rounded-circle btn-right-arrow icon-submitarrow circle-outline float-right last-focusable-element']")));
 
@@ -127,12 +127,13 @@ public class AfasUserStory extends BaseClass {
         driver.findElement(By.xpath("//div[@class='dl-datepicker-group dl-datepicker-group-0']//tr[5]//td[4]")).click();
         driver.findElement(By.xpath("//button[@type='button'][2]")).click();
         driver.findElement(By.xpath("//span[@id='passengers-val']")).click();
-        Thread.sleep(20);
+        Thread.sleep(2000);
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();",driver.findElement(By.xpath("//li[@id='ui-list-passengers1']")));
         driver.findElement(By.xpath("//a[@class='arrow-wht-expander icon-advsearchtriangle']")).click();
-        Thread.sleep(20);
+        Thread.sleep(2000);
         driver.findElement(By.xpath("//label[@class='nearbyAirports booking-widget_checkbox-mobile icon-Checked advSearchoptionLabel']")).click();
         driver.findElement(By.xpath("//span[@id='faresFor-val']")).click();
+        Thread.sleep(2000);
         driver.findElement(By.xpath("//li[@id='ui-list-faresFor1']")).click();
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();",driver.findElement(By.xpath("//button[@class='btn btn-danger rounded-circle btn-right-arrow icon-submitarrow circle-outline float-right last-focusable-element']")));
 
