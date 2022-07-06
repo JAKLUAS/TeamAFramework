@@ -13,7 +13,6 @@ import java.time.Duration;
 public class BaseClass {
 
 
-
     public WebDriver driver;
     @BeforeClass
     public void methodSetUp() {
@@ -30,8 +29,6 @@ public class BaseClass {
     }
 
     @AfterMethod()
-
-
     public void afterMessage() {
         driver.quit();
     }
