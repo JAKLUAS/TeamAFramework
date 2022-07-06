@@ -41,10 +41,11 @@ public class Rahims_Class extends BaseClass{
     }
 
     @Test (groups={"smoke"})
-    public void AdvanceSearch() {
+    public void AdvanceSearch() throws InterruptedException {
 
         driver.findElement(By.xpath("//a[@id='adv-search']")).click();
         driver.findElement(By.xpath("//span[@aria-labelledby='faresFor-label']")).click();
+        Thread.sleep(2000);
         driver.findElement(By.xpath("//li[text()='First Class']")).click();
     }
 
