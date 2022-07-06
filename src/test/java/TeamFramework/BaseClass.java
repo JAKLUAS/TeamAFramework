@@ -24,7 +24,9 @@ public class BaseClass {
         WebDriverManager.chromedriver().setup();
     }
 
+
     @BeforeMethod(alwaysRun = true)
+
 
     public void setUpMethod() {
         driver = new ChromeDriver();
@@ -35,7 +37,9 @@ public class BaseClass {
 
 
 
+
     @AfterMethod(alwaysRun = true)
+
 
 
 
