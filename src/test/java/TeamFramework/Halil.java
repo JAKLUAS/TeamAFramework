@@ -8,20 +8,16 @@ import org.testng.annotations.Test;
 public class Halil extends BaseClass {
 
 
-    @Test(priority=2)
+    @Test(groups ={"smoke"})
     public void getDestination(){
-
-        //driver.get("https://www.delta.com/");
         driver.findElement(By.id("headPrimary1")).click();
         driver.findElement(By.xpath("//span[.='From']")) .click();
         driver.findElement(By.id("search_input")).sendKeys("LGA", Keys.ENTER);
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();",driver.findElement(By.xpath("//input[@name='arrivalCity']")));
         driver.findElement(By.xpath("//input[@aria-invalid='false']")).sendKeys("BUR", Keys.ENTER);
     }
-    @Test(priority=3)
+    @Test(groups ={"smoke"})
     public void oneWayAndRoundTrip(){
-
-        //driver.get("https://www.delta.com/");
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();",driver.findElement(By.id("selectTripType-val")));
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();",driver.findElement(By.id("ui-list-selectTripType1")));
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();",driver.findElement(By.id("input_departureDate_1")));
@@ -29,18 +25,17 @@ public class Halil extends BaseClass {
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();",driver.findElement(By.xpath("//button[.='done']")));
     }
 
-    @Test(priority=4)
+    @Test(groups ={"smoke"})
     public void passengers(){
-        //driver.get("https://www.delta.com/");
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();",driver.findElement(By.id("passengers-val")));
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();",driver.findElement(By.id("ui-list-passengers0")));
 
 
 
     }
-    @Test(priority=5)
+    @Test
     public void submit(){
-       // driver.get("https://www.delta.com/");
+
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();",driver.findElement(By.id("btn-book-submit")));
 
     }
