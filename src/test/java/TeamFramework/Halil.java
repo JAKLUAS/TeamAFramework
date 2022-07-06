@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 public class Halil extends BaseClass {
 
 
-    @Test(priority=1)
+    @Test(groups ={"smoke"})
     public void getDestination(){
         driver.findElement(By.id("headPrimary1")).click();
         driver.findElement(By.xpath("//span[.='From']")) .click();
@@ -16,7 +16,7 @@ public class Halil extends BaseClass {
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();",driver.findElement(By.xpath("//input[@name='arrivalCity']")));
         driver.findElement(By.xpath("//input[@aria-invalid='false']")).sendKeys("BUR", Keys.ENTER);
     }
-    @Test(priority=2)
+    @Test(groups ={"smoke"})
     public void oneWayAndRoundTrip(){
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();",driver.findElement(By.id("selectTripType-val")));
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();",driver.findElement(By.id("ui-list-selectTripType1")));
@@ -25,7 +25,7 @@ public class Halil extends BaseClass {
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();",driver.findElement(By.xpath("//button[.='done']")));
     }
 
-    @Test(priority=3)
+    @Test(groups ={"smoke"})
     public void passengers(){
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();",driver.findElement(By.id("passengers-val")));
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();",driver.findElement(By.id("ui-list-passengers0")));
@@ -33,7 +33,7 @@ public class Halil extends BaseClass {
 
 
     }
-    @Test(priority=4)
+    @Test
     public void submit(){
 
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();",driver.findElement(By.id("btn-book-submit")));
