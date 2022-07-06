@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 public class AH_testcases extends BaseClass {
 
-    @Test(priority = 1)
+    @Test(groups="smoke")
     public void chooseDestination() throws InterruptedException {
 
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();",driver.findElement(By.xpath("//input[@name='fromAirportCode']")));
@@ -20,7 +20,7 @@ public class AH_testcases extends BaseClass {
 
     }
 
-    @Test(priority = 2)
+    @Test
     public void chooseTripAndDate() throws InterruptedException {
 
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();",driver.findElement(By.xpath("//input[@name='fromAirportCode']")));
@@ -40,7 +40,7 @@ public class AH_testcases extends BaseClass {
 
     }
 
-    @Test(priority = 3)
+    @Test
     public void choosePassengerAndShow() throws InterruptedException {
 
 
@@ -65,7 +65,7 @@ public class AH_testcases extends BaseClass {
 
     }
 
-    @Test(priority = 4)
+    @Test(groups="smoke")
     public void chooseWithNoDates() throws InterruptedException {
 
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();",driver.findElement(By.xpath("//input[@name='fromAirportCode']")));
