@@ -34,6 +34,7 @@ public class BaseClass {
     }
 
 
+
     @AfterMethod(alwaysRun = true)
 
 
@@ -41,6 +42,7 @@ public class BaseClass {
     public void afterMessage() {
         driver.quit();
     }
+
 }
 
 
