@@ -1,4 +1,4 @@
-package TeamFramework;
+package com.Delta.TeamFramework;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
