@@ -1,6 +1,7 @@
 package com.Delta.Sprint2TeamA;
 
 import com.Delta.Utilities.Driver;
+import com.github.javafaker.Faker;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -10,10 +11,11 @@ import java.time.Duration;
 public class BaseClass2 {
 
     public WebDriver driver;
+    Faker fake = new Faker();
 
 
     @BeforeMethod(alwaysRun = true)
-    public void setupMethod(){
+    public void setupMethod() {
 
 
         driver = Driver.getDriver();
@@ -24,7 +26,7 @@ public class BaseClass2 {
 
 
     @AfterMethod(alwaysRun = true)
-    public void tearDownMethod(){
+    public void tearDownMethod() {
 
         Driver.quitDriver();
 

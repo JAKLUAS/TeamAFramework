@@ -135,8 +135,8 @@ public class SeleniumUtils {
 
 
 
-    public static void jsSendKeys(String cssExpression, String value){
-        ((JavascriptExecutor)Driver.getDriver()).executeScript("document.querySelector(\"" + cssExpression+"\").value = \""+value+"\";" );
+    public static void jsSendKeys(String cssExpression){
+        ((JavascriptExecutor)Driver.getDriver()).executeScript("document.querySelector(\"" + cssExpression+"\").value = \""+"\";" );
     }
 
 
