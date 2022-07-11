@@ -12,6 +12,7 @@ public class Afa extends BaseClass2 {
 @Test
     public void SignUpWithFirstAndLastname(){
 
+
     SignUpPage sign = new SignUpPage();
 
     driver.get(ConfigReader.getProperty("url"));
