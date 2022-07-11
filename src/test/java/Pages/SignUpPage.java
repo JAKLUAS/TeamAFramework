@@ -11,8 +11,7 @@ public class SignUpPage {
         PageFactory.initElements(Driver.getDriver(),this);
 
     }
-//@FindBy(xpath = "//button[@class='ttClose']")
-//public WebElement AlertFronTheBeginning;
+
     @FindBy(xpath = "//a[@class='sign-up btn btn-link']")
     public WebElement clickOnSignUp;
 
