@@ -23,7 +23,7 @@ public class BaseClass2 {
     }
 
 
-    @AfterMethod(alwaysRun = true)
+    @AfterMethod(enabled = false)
     public void tearDownMethod(){
 
         Driver.quitDriver();
