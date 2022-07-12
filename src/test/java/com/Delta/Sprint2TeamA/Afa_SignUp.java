@@ -1,5 +1,5 @@
 package com.Delta.Sprint2TeamA;
-import Pages.SignUpPage;
+import com.Delta.Pages.SignUpPage;
 import com.Delta.Utilities.ConfigReader;
 import com.Delta.Utilities.SeleniumUtils;
 import org.testng.annotations.Test;
@@ -119,7 +119,7 @@ public class Afa_SignUp extends BaseClass2 {
     sign.ClickOnConfirmEmail.sendKeys(email);
     sign.ClickOnNext.click();
 }
-  @Test
+  @Test(groups = "smoke")
 public void createUsernameAndPassword(){
 
         SignUpPage sign = new SignUpPage();
@@ -165,18 +165,18 @@ public void createUsernameAndPassword(){
         sign.ClickOnConfirmEmail.sendKeys(email);
         sign.ClickOnNext.click();
         sign.clickOnUsernameBox.click();
-        sign.clickOnUsernameBox.sendKeys(fake.internet().emailAddress());
+        sign.clickOnUsernameBox.sendKeys(fake.name().username());
         sign.clickOnPassword.click();
-        String pass= fake.internet().password();
-        sign.clickOnPassword.sendKeys(pass);
+        String pass= fake.internet().password(8, 15);
+        sign.clickOnPassword.sendKeys(pass+"LA");
         sign.clickOnConfirmPass.click();
-        sign.clickOnConfirmPass.sendKeys(pass);
+        sign.clickOnConfirmPass.sendKeys(pass+"LA");
 
 
 
     }
 
-    @Test
+    @Test(groups = "smoke")
 
     public void AnswerSecurityQuestions(){
 
@@ -223,7 +223,7 @@ public void createUsernameAndPassword(){
         sign.ClickOnConfirmEmail.sendKeys(email);
         sign.ClickOnNext.click();
         sign.clickOnUsernameBox.click();
-        sign.clickOnUsernameBox.sendKeys(fake.address().firstName()+"user");
+        sign.clickOnUsernameBox.sendKeys(fake.name().username());
         sign.clickOnPassword.click();
         String pass= fake.internet().password(8, 15);
         sign.clickOnPassword.sendKeys(pass+"LA");

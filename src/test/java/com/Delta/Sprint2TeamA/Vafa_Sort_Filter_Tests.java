@@ -1,6 +1,6 @@
 package com.Delta.Sprint2TeamA;
 
-import Pages.SortAndFilterPage;
+import com.Delta.Pages.SortAndFilterPage;
 import com.Delta.Utilities.ConfigReader;
 import com.Delta.Utilities.SeleniumUtils;
 import org.openqa.selenium.By;

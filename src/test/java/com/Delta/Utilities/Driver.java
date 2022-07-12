@@ -1,10 +1,12 @@
 package com.Delta.Utilities;
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.safari.SafariDriver;
 
 public class Driver {
@@ -26,13 +28,33 @@ public class Driver {
                     WebDriverManager.chromedriver().setup();
                     driver =  new ChromeDriver();
                     break;
+                case "chrome_headless":
+                    ChromeOptions chromeOptions= new ChromeOptions();
+                    chromeOptions.addArguments(("--headless"));
+                    WebDriverManager.chromedriver().setup();
+                    driver =  new ChromeDriver(chromeOptions);
+                    break;
                 case "firefox":
                     WebDriverManager.firefoxdriver().setup();
                     driver =  new FirefoxDriver();
                     break;
+
+                case "firefox_headless":
+                    FirefoxOptions firefoxOptions = new FirefoxOptions();
+                    firefoxOptions.addArguments("--headless");
+                    WebDriverManager.firefoxdriver().setup();
+                    driver =  new FirefoxDriver(firefoxOptions);
+                    break;
                 case "edge":
                     WebDriverManager.edgedriver().setup();
                     driver =  new EdgeDriver();
+                    break;
+
+                case "edge_headless":
+                    EdgeOptions edgeOptions = new EdgeOptions();
+                    edgeOptions.addArguments("--headless");
+                    WebDriverManager.edgedriver().setup();
+                    driver =  new EdgeDriver(edgeOptions);
                     break;
                 case "safari":
                     WebDriverManager.safaridriver().setup();
@@ -47,8 +69,6 @@ public class Driver {
         return driver;
 
     }
-
-
 
     public static void quitDriver(){
         if(driver != null){

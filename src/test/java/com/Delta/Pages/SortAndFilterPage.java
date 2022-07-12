@@ -1,6 +1,5 @@
-package Pages;
+package com.Delta.Pages;
 import com.Delta.Utilities.Driver;
-import com.Delta.Utilities.SeleniumUtils;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
