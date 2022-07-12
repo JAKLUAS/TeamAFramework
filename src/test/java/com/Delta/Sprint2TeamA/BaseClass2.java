@@ -36,6 +36,7 @@ public class BaseClass2 {
    extentReports.setSystemInfo("Name", "Team A");
    }
 
+
     @BeforeMethod(alwaysRun = true)
     public void setupMethod(Method method) {
 
