@@ -134,7 +134,7 @@ public class Lyle extends BaseClass2 {
 
             vacDeals.searchButton.click();
         }
-        @Test
+        @Test (groups = "smoke")
         public void sortByPrice() throws InterruptedException {
 
             VacPackageDeals vacDeals = new VacPackageDeals();
