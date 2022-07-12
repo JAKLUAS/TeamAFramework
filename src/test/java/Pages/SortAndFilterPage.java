@@ -1,9 +1,12 @@
 package Pages;
 import com.Delta.Utilities.Driver;
 import com.Delta.Utilities.SeleniumUtils;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Test;
 
 public class SortAndFilterPage {
 
@@ -12,38 +15,57 @@ public class SortAndFilterPage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(xpath = " //button[@id='btnSubmit']")
+    @FindBy(xpath = "//input[@name='fromAirportCode']")
+    public WebElement clickOnFROM;
+
+    @FindBy(xpath = "//input[@id='search_input']")
+    public WebElement clickOnSearch;
+
+    @FindBy(xpath = "//li[@class='airport-list ng-star-inserted'][1]")
+    public WebElement clickOnLGA;
+
+    @FindBy(xpath = "//input[@name='arrivalCity']")
+    public WebElement clickOnTO;
+
+    @FindBy(xpath = "//input[@id='search_input']")
+    public WebElement clickOnSearch2;
+
+    @FindBy(xpath = "//li[@class='airport-list ng-star-inserted'][1]")
+    public WebElement clickOnBUR;
+
+    @FindBy(xpath = "//span[@class='calenderDepartSpan']")
+    public WebElement clickONCalendar;
+
+    @FindBy(xpath = "//div[@class='dl-datepicker-group dl-datepicker-group-0']//tr[4]//td[7]")
+    public WebElement clickONDate1;
+
+    @FindBy(xpath = "//div[@class='dl-datepicker-group dl-datepicker-group-0']//tr[5]//td[4]")
+    public WebElement clickONDate2;
+
+    @FindBy(xpath = "//button[@type='button'][2]")
+    public WebElement clickONDone;
+
+    @FindBy(xpath = "//span[@id='passengers-val']")
+    public WebElement clickOnPassenger;
+
+    @FindBy(xpath = "//li[@id='ui-list-passengers1']")
+    public WebElement selectTwoPassengers;
+    @FindBy(xpath = "//label[@for='shopWithMiles']")
+    public WebElement shopWithMiles;
+
+    @FindBy(xpath = "//a[@id='adv-search']")
+    public WebElement clickOnAdvancedSearch;
+
+    @FindBy(xpath = "//label[@for='nearbyAirports']")
+    public WebElement clickOnNearbyAirports;
+
+    @FindBy(xpath = "//span[@id='faresFor-val']")
+    public WebElement openBesFaresFor;
+
+    @FindBy(xpath = "//li[@id='ui-list-faresFor3']")
+    public WebElement clickonDeltaComfort;
+
+    @FindBy(xpath = "//button[@id='btnSubmit']")
     public WebElement clickOnSubmit;
-
-    @FindBy(xpath = "//span[@class='float-left']")
-    public WebElement clickOnSortAndFilter;
-    @FindBy(xpath = "//span[@title='selected  Best Match']")
-    public WebElement clickOnBestMatch;
-    @FindBy(xpath = "//li[@id='ui-list-sortby1']")
-    public WebElement clickOnPrice;
-    @FindBy(xpath = "")
-    public WebElement DeselectMultistop;
-
-    @FindBy(xpath = "//div[@style='left: 100%;'][1]")
-    public WebElement ClickOnConnectionTime;
-
-
-    @FindBy(xpath = "//div[@class='mb-3 col-sm-12 col-lg-4 col-md-4 p-0 d-flex flex-row ng-star-inserted']")
-    public WebElement ClickOnCheckBoxes;
-
-    @FindBy(xpath = "//label[@for='layoverAirport_3']")
-    public WebElement ClickOnLAX;
-
-    @FindBy(xpath = "//div[@aria-valuetext='10200']")
-    public WebElement ClickOnTotalPrice;
-
-    @FindBy(xpath = "//label[@for='layoverAirport_5']")
-    public WebElement ClickOnSEA;
-
-    @FindBy(xpath = "//label[@for='layoverAirport_2']")
-    public WebElement ClickOnDTW;
-
-    @FindBy(xpath = "//li[@id='ui-list-sortby5']")
-    public WebElement ClickOnTravelTime;
 
 }

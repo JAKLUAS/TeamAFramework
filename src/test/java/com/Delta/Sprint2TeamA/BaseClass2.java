@@ -16,6 +16,7 @@ public class BaseClass2 {
 
 
 
+
     @BeforeMethod(alwaysRun = true)
     public void setupMethod(){
 
