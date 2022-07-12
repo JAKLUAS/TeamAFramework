@@ -1,5 +1,4 @@
 package com.Delta.Utilities;
-
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
@@ -7,7 +6,7 @@ import java.util.Properties;
 public class ConfigReader {
 
     private static Properties properties;
-    private final static String PATH ="config.properties";
+    private final static String PATH ="Config.properties";
 
     static {
         FileInputStream fis = null;
