@@ -1,5 +1,6 @@
 
 
+
 <suite name="Framework">
     <test name="Delta">
 
@@ -7,12 +8,34 @@
         <packages>
 
 
+
+
 <package name=".*"/>
+
+
+
+
+
+
 
 
         </packages>
 
+
+
+
+
+
+
+
     </test>
+
+
+
+
+
+
+
 
 
 </suite>
