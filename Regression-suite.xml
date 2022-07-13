@@ -1,14 +1,20 @@
 
 
 
-<suite name="Framework1">
-    <test name="Delta1">
+<suite name="Framework">
+    <test name="Delta">
 
 
         <packages>
 
 
-<package name="com.Delta.Sprint2TeamA"/>
+
+
+<package name=".*"/>
+
+
+
+
 
 
 
