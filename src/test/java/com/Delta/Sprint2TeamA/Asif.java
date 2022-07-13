@@ -1,17 +1,12 @@
 package com.Delta.Sprint2TeamA;
 
-import Pages.HomePageRentACar;
-import Pages.PickUpPageRentACar;
-import Pages.SelectedPageRentACar;
+import com.Delta.Pages.HomePageRentACar;
+import com.Delta.Pages.PickUpPageRentACar;
+import com.Delta.Pages.SelectedPageRentACar;
 import com.Delta.Utilities.ConfigReader;
 import com.Delta.Utilities.Driver;
 import com.Delta.Utilities.SeleniumUtils;
-import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
-
-import java.time.Duration;
 
 public class Asif extends BaseClass2 {
 
