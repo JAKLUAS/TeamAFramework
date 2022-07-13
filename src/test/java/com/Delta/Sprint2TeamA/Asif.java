@@ -109,7 +109,7 @@ public class Asif extends BaseClass2 {
         PickUpPageRentACar pickup = new PickUpPageRentACar();
 
         SeleniumUtils.jsClick(pickup.clickOnPickUp);
-        SeleniumUtils.jsClick(pickup.clickOnPickUpAndEnter);
+        SeleniumUtils.jsClick(pickup.clickOnPickUpAndEnter);///bkdjfc kl
         pickup.EnterPickUpLocation();
         SeleniumUtils.jsClick(pickup.clickOnBurbank);
         SeleniumUtils.jsClick(pickup.clickOnDate);
