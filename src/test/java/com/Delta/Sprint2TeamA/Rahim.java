@@ -1,6 +1,8 @@
 package com.Delta.Sprint2TeamA;
 
+import com.Delta.Pages.Rahims_Travel_Info_Pages;
 import com.Delta.Sprint2TeamA.BaseClass2;
+import com.Delta.Utilities.ConfigReader;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -17,8 +19,11 @@ public class Rahim extends BaseClass2 {
 
     @Test (groups={"smoke"})
     public void DeltaOne() throws InterruptedException {
-        new WebDriverWait(driver, Duration.ofSeconds(6)).until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//ul[@class='navbar-nav nav-primary nav']//li[6]")));
-        WebElement travelInfoDD = driver.findElement(By.xpath("//ul[@class='navbar-nav nav-primary nav']//li[6]"));
+        driver.get(ConfigReader.getProperty("url1"));
+        Rahims_Travel_Info_Pages rrPages = new Rahims_Travel_Info_Pages();
+
+        //new WebDriverWait(driver, Duration.ofSeconds(6)).until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//ul[@class='navbar-nav nav-primary nav']//li[6]")));
+        WebElement travelInfoDD = rrPages.travelInfoButton;
         Actions actions = new Actions(driver); //
         actions.moveToElement(travelInfoDD).build().perform();
         driver.findElement(By.xpath("//ul[@class='list-unstyled m-lg-0']//li[1]")).click();
@@ -32,8 +37,10 @@ public class Rahim extends BaseClass2 {
     }
     @Test (groups={"smoke"})
     public void premiumSelect() throws InterruptedException {
+        driver.get(ConfigReader.getProperty("url1"));
+        Rahims_Travel_Info_Pages rrPages = new Rahims_Travel_Info_Pages();
         new WebDriverWait(driver, Duration.ofSeconds(6)).until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//ul[@class='navbar-nav nav-primary nav']//li[6]")));
-        WebElement travelInfoDD = driver.findElement(By.xpath("//ul[@class='navbar-nav nav-primary nav']//li[6]"));
+        WebElement travelInfoDD = rrPages.travelInfoButton;
         Actions actions = new Actions(driver); //
         actions.moveToElement(travelInfoDD).build().perform();
         driver.findElement(By.xpath("//ul[@class='list-unstyled m-lg-0']//li[2]")).click();
@@ -44,8 +51,11 @@ public class Rahim extends BaseClass2 {
 
     @Test (groups={"smoke"})
     public void firstClass() throws InterruptedException {
+        driver.get(ConfigReader.getProperty("url1"));
+        Rahims_Travel_Info_Pages rrPages = new Rahims_Travel_Info_Pages();
+
         new WebDriverWait(driver, Duration.ofSeconds(6)).until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//ul[@class='navbar-nav nav-primary nav']//li[6]")));
-        WebElement travelInfoDD = driver.findElement(By.xpath("//ul[@class='navbar-nav nav-primary nav']//li[6]"));
+        WebElement travelInfoDD = rrPages.travelInfoButton;
         Actions actions = new Actions(driver); //
         actions.moveToElement(travelInfoDD).build().perform();
         driver.findElement(By.xpath("//ul[@class='list-unstyled m-lg-0']//li[3]")).click();
@@ -56,8 +66,10 @@ public class Rahim extends BaseClass2 {
 
     @Test
     public void comfortPlus() throws InterruptedException {
+        driver.get(ConfigReader.getProperty("url1"));
+        Rahims_Travel_Info_Pages rrPages = new Rahims_Travel_Info_Pages();
         new WebDriverWait(driver, Duration.ofSeconds(6)).until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//ul[@class='navbar-nav nav-primary nav']//li[6]")));
-        WebElement travelInfoDD = driver.findElement(By.xpath("//ul[@class='navbar-nav nav-primary nav']//li[6]"));
+        WebElement travelInfoDD = rrPages.travelInfoButton;
         Actions actions = new Actions(driver); //
         actions.moveToElement(travelInfoDD).build().perform();
         driver.findElement(By.xpath("//ul[@class='list-unstyled m-lg-0']//li[4]")).click();
@@ -68,8 +80,10 @@ public class Rahim extends BaseClass2 {
 
     @Test (groups={"smoke"})
     public void mainCabin() throws InterruptedException {
+        driver.get(ConfigReader.getProperty("url1"));
+        Rahims_Travel_Info_Pages rrPages = new Rahims_Travel_Info_Pages();
         new WebDriverWait(driver, Duration.ofSeconds(6)).until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//ul[@class='navbar-nav nav-primary nav']//li[6]")));
-        WebElement travelInfoDD = driver.findElement(By.xpath("//ul[@class='navbar-nav nav-primary nav']//li[6]"));
+        WebElement travelInfoDD = rrPages.travelInfoButton;
         Actions actions = new Actions(driver); //
         actions.moveToElement(travelInfoDD).build().perform();
         driver.findElement(By.xpath("//ul[@class='list-unstyled m-lg-0']//li[5]")).click();
