@@ -1,6 +1,6 @@
-<suite name="Frame">
+<suite name="FrameWork">
 
-    <test name="Delta">
+    <test name="Delta2">
 
         <groups>
           <run>
@@ -12,12 +12,12 @@
 
      <classes>
 
-         <class name="TeamFramework.AfasUserStory"/>
-<!--         <class name="TeamFramework.Halil"/>-->
-<!--         <class name="TeamFramework.Rahims_class"/>-->
-<!--         <class name="TeamFramework.LyleUserStory"/>-->
-<!--         <class name="TeamFramework.VafasTest_Cases"/>-->
-<!--         <class name="TeamFramework.AH_testcases"/>-->
+         <class name="Afa_SignUp"/>
+<!--         <class name="Xalil"/>-->
+<!--         <class name="Rahim"/>-->
+<!--         <class name="Lyle"/>-->
+<!--         <class name="Vafa_Sort_Filter_Tests"/>-->
+<!--         <class name="Asif"/>-->
 
      </classes>
 

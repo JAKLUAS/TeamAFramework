@@ -1,10 +1,8 @@
-package Utilities;
-
+package com.Delta.Utilities;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.*;
-
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -12,6 +10,7 @@ import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Set;
 import java.util.function.Function;
 
 public class SeleniumUtils {
@@ -26,6 +25,8 @@ public class SeleniumUtils {
         }
         Driver.getDriver().switchTo().window(origin);
     }
+
+
     public static void hover(WebElement element) {
         Actions actions = new Actions(Driver.getDriver());
         actions.moveToElement(element).perform();
@@ -111,7 +112,7 @@ public class SeleniumUtils {
         File source = ts.getScreenshotAs(OutputType.FILE);
         String date = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
         String fileName = name + date + ".png";
-        String target = System.getProperty("user.dir") + "/test-output/extentReports/" + fileName;
+        String target = System.getProperty("user.dir") + "/target/extentReports/" + fileName;
         File finalDestination = new File(target);
         try {
             FileUtils.copyFile(source, finalDestination);
@@ -135,8 +136,8 @@ public class SeleniumUtils {
 
 
 
-    public static void jsSendKeys(String cssExpression, String value){
-        ((JavascriptExecutor)Driver.getDriver()).executeScript("document.querySelector(\"" + cssExpression+"\").value = \""+value+"\";" );
+    public static void jsSendKeys(String cssExpression){
+        ((JavascriptExecutor)Driver.getDriver()).executeScript("document.querySelector(\"" + cssExpression+"\").value = \""+"\";" );
     }
 
 
@@ -145,8 +146,6 @@ public class SeleniumUtils {
         int y = element.getLocation().getY();
         ((JavascriptExecutor)Driver.getDriver()).executeScript("window.scrollBy(0,"+ y +")");
     }
-
-
 
 
 
