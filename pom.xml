@@ -65,10 +65,10 @@
                     <artifactId>maven-surefire-plugin</artifactId>
                     <version>3.0.0-M7</version>
                     <configuration>
-                        <includes>
 
-                            <include>Afa_SignUp</include>
-                        </includes>
+                     <suiteXmlFiles>
+                         <suiteXmlFile>${xmlFile}</suiteXmlFile>
+                     </suiteXmlFiles>
                     </configuration>
                 </plugin>
             </plugins>
