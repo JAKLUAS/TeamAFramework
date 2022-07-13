@@ -67,6 +67,7 @@
                     <configuration>
 
                      <suiteXmlFiles>
+                         <!--suppress UnresolvedMavenProperty -->
                          <suiteXmlFile>${xmlFile}</suiteXmlFile>
                      </suiteXmlFiles>
                     </configuration>
