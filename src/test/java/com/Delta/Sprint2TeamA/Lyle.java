@@ -1,6 +1,6 @@
 package com.Delta.Sprint2TeamA;
 
-import Pages.VacPackageDeals;
+import com.Delta.Pages.VacPackageDeals;
 import com.Delta.Utilities.ConfigReader;
 import com.Delta.Utilities.SeleniumUtils;
 import org.testng.annotations.Test;
