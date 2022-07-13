@@ -1,4 +1,4 @@
-package Pages;
+package com.Delta.Pages;
 
 import com.Delta.Utilities.Driver;
 import org.openqa.selenium.By;
