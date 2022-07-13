@@ -67,7 +67,7 @@ public class BaseClass2 {
     @AfterSuite(alwaysRun = true)
 
     public void tearDownReport(){
-   extentReports.flush(); //
+   extentReports.flush();
 
     }
 }
