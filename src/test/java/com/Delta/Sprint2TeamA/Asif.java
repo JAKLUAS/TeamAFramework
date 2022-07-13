@@ -16,7 +16,7 @@ public class Asif extends BaseClass2 {
 
         HomePageRentACar rent = new HomePageRentACar();
 
-        Driver.getDriver().get(ConfigReader.getProperty("urlForRent"));
+        Driver.getDriver().get(ConfigReader.getProperty("url1"));
         SeleniumUtils.scroll(0, 300);
         SeleniumUtils.jsClick(rent.clickOnRentACar);
         SeleniumUtils.switchToWindow("Travel with Delta");
@@ -42,7 +42,7 @@ public class Asif extends BaseClass2 {
 
         HomePageRentACar rent = new HomePageRentACar();
 
-        Driver.getDriver().get(ConfigReader.getProperty("urlForRent"));
+        Driver.getDriver().get(ConfigReader.getProperty("url1"));
         SeleniumUtils.scroll(0, 300);
         SeleniumUtils.jsClick(rent.clickOnRentACar);
         SeleniumUtils.switchToWindow("Travel with Delta");
@@ -65,7 +65,7 @@ public class Asif extends BaseClass2 {
 
         HomePageRentACar rent = new HomePageRentACar();
 
-        Driver.getDriver().get(ConfigReader.getProperty("urlForRent"));
+        Driver.getDriver().get(ConfigReader.getProperty("url1"));
         SeleniumUtils.scroll(0, 300);
         SeleniumUtils.jsClick(rent.clickOnRentACar);
         SeleniumUtils.switchToWindow("Travel with Delta");
@@ -96,7 +96,7 @@ public class Asif extends BaseClass2 {
 
         HomePageRentACar rent = new HomePageRentACar();
 
-        Driver.getDriver().get(ConfigReader.getProperty("urlForRent"));
+        Driver.getDriver().get(ConfigReader.getProperty("url1"));
         SeleniumUtils.scroll(0, 300);
         SeleniumUtils.jsClick(rent.clickOnRentACar);
         SeleniumUtils.switchToWindow("Travel with Delta");
@@ -104,7 +104,7 @@ public class Asif extends BaseClass2 {
         PickUpPageRentACar pickup = new PickUpPageRentACar();
 
         SeleniumUtils.jsClick(pickup.clickOnPickUp);
-        SeleniumUtils.jsClick(pickup.clickOnPickUpAndEnter);
+        SeleniumUtils.jsClick(pickup.clickOnPickUpAndEnter);///bkdjfc kl
         pickup.EnterPickUpLocation();
         SeleniumUtils.jsClick(pickup.clickOnBurbank);
         SeleniumUtils.jsClick(pickup.clickOnDate);
