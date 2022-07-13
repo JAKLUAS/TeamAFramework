@@ -10,25 +10,25 @@
           </run>
 
 
-     <classes>
-
-         <class name="Afa_SignUp"/>
-<!--         <class name="Xalil"/>-->
-<!--         <class name="Rahim"/>-->
-<!--         <class name="Lyle"/>-->
-<!--         <class name="Vafa_Sort_Filter_Tests"/>-->
-<!--         <class name="Asif"/>-->
-
-     </classes>
 
 
         </groups>
+<!--          <classes>-->
+
+<!--                 <class name="Afa_SignUp"/>-->
+<!--                 <class name="Xalil"/>-->
+<!--                 <class name="Rahim"/>-->
+<!--                 <class name="Lyle"/>-->
+<!--                 <class name="Vafa_Sort_Filter_Tests"/>-->
+<!--                 <class name="Asif"/>-->
+
+<!--             </classes>-->
 
 
         <packages>
 
 
-            <package name=".*"/>
+            <package name="com.Delta.Sprint2TeamA"/>
 
 
         </packages>
