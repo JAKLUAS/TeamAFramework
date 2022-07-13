@@ -1,21 +1,17 @@
 package com.Delta.Sprint2TeamA;
 
-import Pages.SortAndFilterPage;
+
+import com.Delta.Pages.Vafa_Booking_Page;
 import com.Delta.Utilities.ConfigReader;
 import com.Delta.Utilities.SeleniumUtils;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 import org.testng.annotations.Test;
-import java.util.List;
 
 public class Vafa_Booking_Flight_Tests extends BaseClass2 {
 
     @Test
-    public void selectfromNYCtoBUR() {
+    public void selectFromNYCtoBUR() {
 
-        SortAndFilterPage sfp = new SortAndFilterPage();
+        Vafa_Booking_Page sfp = new Vafa_Booking_Page();
         driver.get(ConfigReader.getProperty("url1"));
         SeleniumUtils.jsClick(sfp.clickOnFROM);
         sfp.clickOnSearch.sendKeys("LGA");
@@ -28,7 +24,7 @@ public class Vafa_Booking_Flight_Tests extends BaseClass2 {
     @Test
     public void FromNYCtoBURWithDates(){
         driver.get(ConfigReader.getProperty("url1"));
-        SortAndFilterPage sfp = new SortAndFilterPage();
+        Vafa_Booking_Page sfp = new Vafa_Booking_Page();
         SeleniumUtils.jsClick(sfp.clickOnFROM);
         sfp.clickOnSearch.sendKeys("LGA");
         sfp.clickOnLGA.click();
@@ -45,7 +41,7 @@ public class Vafa_Booking_Flight_Tests extends BaseClass2 {
     @Test
     public void FromNYCtoBURWithPassengers() {
         driver.get(ConfigReader.getProperty("url1"));
-        SortAndFilterPage sfp = new SortAndFilterPage();
+        Vafa_Booking_Page sfp = new Vafa_Booking_Page();
         SeleniumUtils.jsClick(sfp.clickOnFROM);
         sfp.clickOnSearch.sendKeys("LGA");
         sfp.clickOnLGA.click();
@@ -64,7 +60,7 @@ public class Vafa_Booking_Flight_Tests extends BaseClass2 {
     @Test
     public void FromNYCtoBURWithMiles() {
         driver.get(ConfigReader.getProperty("url1"));
-        SortAndFilterPage sfp = new SortAndFilterPage();
+        Vafa_Booking_Page sfp = new Vafa_Booking_Page();
         SeleniumUtils.jsClick(sfp.clickOnFROM);
         sfp.clickOnSearch.sendKeys("LGA");
         sfp.clickOnLGA.click();
@@ -83,7 +79,7 @@ public class Vafa_Booking_Flight_Tests extends BaseClass2 {
         @Test
         public void FromNYCtoBURWithAdvancedSearch() {
             driver.get(ConfigReader.getProperty("url1"));
-            SortAndFilterPage sfp = new SortAndFilterPage();
+            Vafa_Booking_Page sfp = new Vafa_Booking_Page();
             SeleniumUtils.jsClick(sfp.clickOnFROM);
             sfp.clickOnSearch.sendKeys("LGA");
             sfp.clickOnLGA.click();
@@ -100,7 +96,7 @@ public class Vafa_Booking_Flight_Tests extends BaseClass2 {
             sfp.clickOnAdvancedSearch.click();
             sfp.clickOnNearbyAirports.click();
             sfp.openBesFaresFor.click();
-            sfp.clickonDeltaComfort.click();
+            sfp.clickOnDeltaComfort.click();
             sfp.clickOnSubmit.click();
 
         }
