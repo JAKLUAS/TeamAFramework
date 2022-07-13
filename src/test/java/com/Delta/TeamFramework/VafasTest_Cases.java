@@ -1,4 +1,4 @@
-package TeamFramework;
+package com.Delta.TeamFramework;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -25,6 +25,7 @@ public class VafasTest_Cases extends BaseClass {
               ((JavascriptExecutor) driver).executeScript("arguments[0].click();", driver.findElement(By.xpath("//input[@name='arrivalCity']")));
               driver.findElement(By.xpath("//input[@id='search_input']")).sendKeys("Bur");
               driver.findElement(By.xpath("//li[@class='airport-list ng-star-inserted'][1]")).click();
+
               driver.findElement(By.xpath("//span[@id='selectTripType-val']")).click();
               driver.findElement(By.xpath("//span[@class='calenderDepartSpan']")).click();
               driver.findElement(By.xpath("//div[@class='dl-datepicker-group dl-datepicker-group-0']//tr[3]//td[5]")).click();
