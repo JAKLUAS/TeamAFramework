@@ -12,7 +12,7 @@ public class Afa_SignUp extends BaseClass2 {
 
     SignUpPage sign = new SignUpPage();
 
-    driver.get(ConfigReader.getProperty("url"));
+    driver.get(ConfigReader.getProperty("url1"));
     SeleniumUtils.jsClick(sign.clickOnSignUp);
 
    SeleniumUtils.jsClick( sign.selecctOnFisrtNameBox);
@@ -40,7 +40,7 @@ public class Afa_SignUp extends BaseClass2 {
 
     SignUpPage sign = new SignUpPage();
 
-    driver.get(ConfigReader.getProperty("url"));
+    driver.get(ConfigReader.getProperty("url1"));
     SeleniumUtils.jsClick(sign.clickOnSignUp);
 
     SeleniumUtils.jsClick( sign.selecctOnFisrtNameBox);
@@ -77,7 +77,7 @@ public class Afa_SignUp extends BaseClass2 {
 
     SignUpPage sign = new SignUpPage();
 
-    driver.get(ConfigReader.getProperty("url"));
+    driver.get(ConfigReader.getProperty("url1"));
     SeleniumUtils.jsClick(sign.clickOnSignUp);
 
     SeleniumUtils.jsClick(sign.selecctOnFisrtNameBox);
@@ -124,7 +124,7 @@ public void createUsernameAndPassword(){
 
         SignUpPage sign = new SignUpPage();
 
-        driver.get(ConfigReader.getProperty("url"));
+        driver.get(ConfigReader.getProperty("url1"));
         SeleniumUtils.jsClick(sign.clickOnSignUp);
 
         SeleniumUtils.jsClick( sign.selecctOnFisrtNameBox);
@@ -182,7 +182,7 @@ public void createUsernameAndPassword(){
 
         SignUpPage sign = new SignUpPage();
 
-        driver.get(ConfigReader.getProperty("url"));
+        driver.get(ConfigReader.getProperty("url1"));
         SeleniumUtils.jsClick(sign.clickOnSignUp);
 
         SeleniumUtils.jsClick( sign.selecctOnFisrtNameBox);
