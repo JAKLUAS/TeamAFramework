@@ -21,7 +21,7 @@ public class Asif extends BaseClass2 {
 
         HomePageRentACar rent = new HomePageRentACar();
 
-        Driver.getDriver().get(ConfigReader.getProperty("urlForRent"));
+        Driver.getDriver().get(ConfigReader.getProperty("url1"));
         SeleniumUtils.scroll(0, 300);
         SeleniumUtils.jsClick(rent.clickOnRentACar);
         SeleniumUtils.switchToWindow("Travel with Delta");
@@ -47,7 +47,7 @@ public class Asif extends BaseClass2 {
 
         HomePageRentACar rent = new HomePageRentACar();
 
-        Driver.getDriver().get(ConfigReader.getProperty("urlForRent"));
+        Driver.getDriver().get(ConfigReader.getProperty("url1"));
         SeleniumUtils.scroll(0, 300);
         SeleniumUtils.jsClick(rent.clickOnRentACar);
         SeleniumUtils.switchToWindow("Travel with Delta");
@@ -70,7 +70,7 @@ public class Asif extends BaseClass2 {
 
         HomePageRentACar rent = new HomePageRentACar();
 
-        Driver.getDriver().get(ConfigReader.getProperty("urlForRent"));
+        Driver.getDriver().get(ConfigReader.getProperty("url1"));
         SeleniumUtils.scroll(0, 300);
         SeleniumUtils.jsClick(rent.clickOnRentACar);
         SeleniumUtils.switchToWindow("Travel with Delta");
@@ -101,7 +101,7 @@ public class Asif extends BaseClass2 {
 
         HomePageRentACar rent = new HomePageRentACar();
 
-        Driver.getDriver().get(ConfigReader.getProperty("urlForRent"));
+        Driver.getDriver().get(ConfigReader.getProperty("url1"));
         SeleniumUtils.scroll(0, 300);
         SeleniumUtils.jsClick(rent.clickOnRentACar);
         SeleniumUtils.switchToWindow("Travel with Delta");
