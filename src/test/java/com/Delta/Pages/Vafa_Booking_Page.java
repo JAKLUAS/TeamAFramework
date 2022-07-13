@@ -20,7 +20,7 @@ public class Vafa_Booking_Page {
     public WebElement clickOnSearch;
 
     @FindBy(xpath = "//li[@class='airport-list ng-star-inserted'][1]")
-    public WebElement clickOnLGA;
+    public WebElement clickOnLGA; //
 
     @FindBy(xpath = "//input[@name='arrivalCity']")
     public WebElement clickOnTO;
