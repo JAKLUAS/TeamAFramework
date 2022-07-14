@@ -1,4 +1,4 @@
-<suite name="Frame1">
+<suite name="Frame1" >
 
     <test name="Delta2">
 
@@ -9,16 +9,13 @@
 
           </run>
 
-
-
-
         </groups>
 
 
         <packages>
 
 
-            <package name="com.Delta.Sprint2TeamA"/>
+            <package name="com.Delta.Sprint3TeamA"/>
 
 
         </packages>

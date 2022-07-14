@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 public class Afa_SignUp extends BaseClass2 {
 
 @Test
+
     public void SignUpWithFirstAndLastname(){
 
 
