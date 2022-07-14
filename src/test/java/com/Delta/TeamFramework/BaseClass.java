@@ -1,7 +1,6 @@
-package TeamFramework;
+package com.Delta.TeamFramework;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
@@ -13,14 +12,15 @@ import java.time.Duration;
 public class BaseClass {
 
 
-
     public WebDriver driver;
-    @BeforeClass
+    @BeforeClass(alwaysRun = true)
     public void methodSetUp() {
         WebDriverManager.chromedriver().setup();
     }
 
-    @BeforeMethod (alwaysRun = true)
+
+    @BeforeMethod(alwaysRun = true)
+
 
     public void setUpMethod() {
         driver = new ChromeDriver();
@@ -29,12 +29,16 @@ public class BaseClass {
         driver.manage().window().maximize();
     }
 
+
+
+
     @AfterMethod(alwaysRun = true)
 
 
     public void afterMessage() {
         driver.quit();
     }
+
 }
 
 

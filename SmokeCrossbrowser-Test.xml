@@ -1,0 +1,29 @@
+<suite name="Frame1" >
+
+    <test name="Delta2">
+
+        <groups>
+          <run>
+
+             <include name="smoke"/>
+
+          </run>
+
+        </groups>
+
+
+        <packages>
+
+
+            <package name="com.Delta.Sprint3TeamA"/>
+
+
+        </packages>
+
+
+
+
+    </test>
+
+
+</suite>
