@@ -2,18 +2,9 @@
 
     <test name = "testParallel">
 
-
-
-
       <classes>
 
           <class name ="com.Delta.Sprint3TeamA."/>
-
-
-
-
-
-
 
 
       </classes>
