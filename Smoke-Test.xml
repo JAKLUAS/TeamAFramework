@@ -1,32 +1,38 @@
-<suite name="Frame1">
+<suite name="Frame">
 
-    <test name="Delta2">
+    <test name="Delta">
 
         <groups>
           <run>
 
-             <include name="smoke"/>
+             <include name="smoke" />
 
           </run>
 
 
+     <classes>
+
+         <class name="TeamFramework.AfasUserStory"/>
+         <class name="TeamFramework.Halil"/>
+         <class name="TeamFramework.Rahims_class"/>
+         <class name="TeamFramework.LyleUserStory"/>
+         <class name="TeamFramework.VafasTest_Cases"/>
+         <class name="TeamFramework.AH_testcases"/>
+
+     </classes>
 
 
         </groups>
 
 
-        <packages>
-
-
-            <package name="com.Delta.Sprint2TeamA"/>
-
-
-        </packages>
-
 
 
 
     </test>
+
+
+
+
 
 
 </suite>

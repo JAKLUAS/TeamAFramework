@@ -1,0 +1,44 @@
+<suite name = "Delta" parallel="classes" thread-count="7">
+
+    <test name ="parallel">
+
+
+
+<packages>
+
+
+
+    <package name = "com.Delta.Sprint3TeamA"/>
+
+
+
+</packages>
+
+
+
+
+
+
+
+    </test>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</suite>
